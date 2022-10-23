@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: #1F2937;
+    color: white;
+}
+
+#header {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.light-mode {
+    background: #ECFDF5;
+    color: #2B283A;
+}
+
+#card {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+p {
+    margin-top: 0px;
+    color: #10B981
+}
+
+h4 {
+    font-weight: normal;
+}
+
+#passwordLength {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.checkboxes {
+    margin: 5px 0px;
+}
+
+.cardButtons {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background: #059669;
+    color: white;
+    border: none;
+}
+
+#footer {
+    margin: 30px;
+    display: flex;
+    border-top: 2px solid #2F3E53;
+}
+
+.passwordBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 30px;
+    height: 40px;
+    width: 210px;
+    background: #10B981;
+    color: #1F2937;
+    cursor: pointer;
+    letter-spacing: 1px
+}
+
+#testArea {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin: 0 0 20px 50px;
+}
+
+#copyTest {
+    width: 200px;
+}
