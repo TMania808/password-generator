@@ -48,6 +48,7 @@ h4 {
     background: #059669;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 #footer {
