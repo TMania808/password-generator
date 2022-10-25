@@ -1,7 +1,6 @@
 let password1 = document.getElementById("password1")
 let password2 = document.getElementById("password2")
 let passwordLength = document.getElementById("passwordLength")
-let arrayEl = document.getElementById("array")
 let numbers = false
 let symbols = false
 let light = false
@@ -11,6 +10,14 @@ let symbolCheck = document.getElementById("symbolCheckBox")
 
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
+
+password1.addEventListener("click", function() {
+    copyPassword("password1")
+})
+
+password2.addEventListener("click", function() {
+    copyPassword("password2")
+})
 
 function toggleNumbers() {
     if (numberCheck.checked === true) {
@@ -119,31 +126,18 @@ function generatePassword() {
     }
 }
 
-function copyPassword1() {
+function copyPassword(string) {
     let copyText = document.getElementById("password1")
     let textArea = document.createElement("textarea")
     textArea.value = copyText.textContent
     document.body.appendChild(textArea)
     textArea.select()
     document.execCommand("Copy")
-    alert("Copied the text: " + password1.textContent);
-    textArea.remove();
-}
-
-
-function copyPassword2() {
-    let copyText = document.getElementById("password2")
-    let textArea = document.createElement("textarea")
-    textArea.value = copyText.textContent
-    document.body.appendChild(textArea)
-    textArea.select()
-    document.execCommand("Copy")
-    alert("Copied the text: " + password2.textContent);
     textArea.remove();
 }
 
 function lightMode() {
-    if (light === true) {
+    if (light) {
         lightBtn.textContent = "Light Mode"
         light = false
     } else {
