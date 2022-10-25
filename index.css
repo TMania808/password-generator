@@ -70,15 +70,3 @@ h4 {
     cursor: pointer;
     letter-spacing: 1px
 }
-
-#testArea {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    margin: 0 0 20px 50px;
-}
-
-#copyTest {
-    width: 200px;
-}
