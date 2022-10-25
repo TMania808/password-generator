@@ -127,7 +127,7 @@ function generatePassword() {
 }
 
 function copyPassword(string) {
-    let copyText = document.getElementById("password1")
+    let copyText = document.getElementById(string)
     let textArea = document.createElement("textarea")
     textArea.value = copyText.textContent
     document.body.appendChild(textArea)
